@@ -8,16 +8,16 @@ A simple Content Delivery Network server that serves assets, such as images, to 
 
 ## Usage
 
+This service is a part of Teashop application environment. To see the details of setting up the entire environment, go to [Teashop Ops](https://github.com/lukaszslazyk/teashop-ops) repository.
+
 ### Docker container
 
-To setup the CDN on docker container, first build the container image by running the following command in project directory:
-
+To setup the CDN in docker container, first build the container image by running the following command in project directory:
 ```
 docker build -t teashop_cdn .
 ```
 
 Then to run the container:
-
 ```
 docker run -p 8080:80 teashop_cdn
 ```
